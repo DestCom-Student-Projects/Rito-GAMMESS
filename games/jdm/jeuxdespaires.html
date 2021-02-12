@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Rito Gammess</title>
+    <meta name="author" content="Rito Gammess">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../assets/Images/favicon-96x96.png" />
+    <script src="https://kit.fontawesome.com/3de5047d52.js" crossorigin="anonymous"></script>
+    <meta property="og:title" content="Rito GAMMESS">
+    <meta property="og:site_name" content="Rito GAMMESS">
+    <meta property="og:url" content="http://ritogammess.eu/">
+    <meta property="og:description" content="Accédez au site officiel de RITO GAMMESS,
+Le site ultime de divertissement au style futuriste des années 80.
+Venez découvrir l'équipe et nos jeux,
+et vous aussi entrez un monde de jeu sans limites !">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="/assets/Images/ritoog.png">
+
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 25px;
+            padding-right: 25px;
+            height: 80px;
+            box-sizing: border-box;
+            line-height: 80px;
+            font-weight: 500;
+            width: 100%;
+            font-family: 'Roboto';
+
+        }
+
+        nav {
+            margin-left: 5%;
+        }
+    
+        a{
+            color: white;
+            text-decoration: none;
+            transition-property: opacity;
+            transition-delay: 0.3;
+            transition-duration: 0.3s;
+        }
+        
+        a:hover{
+            opacity: 0.5;
+        }
+        
+        a:visited{
+            color: white;
+        }
+        .credits {
+            margin-left: 25px;
+        }
+
+        .logo {
+            filter: invert(100%);
+        }
+
+        .tailleLogo {
+            width: 10%;
+        }
+
+
+        h2 {
+            color: rgba(238, 255, 0, 0.541);
+            ;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 10mm;
+        }
+
+
+        h3 {
+            text-align: center;
+            font-size: 6mm;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        button {
+            text-align: center;
+            cursor: pointer;
+            background-color: palevioletred;
+        }
+
+        .logo {
+            filter: invert(100%);
+        }
+
+        img {
+            cursor: pointer;
+            height: 100px;
+            width: 100px;
+        }
+
+        #carte {
+            background: linear-gradient(rgb(8, 119, 119), purple, yellow);
+            width: 700px;
+            height: 600px;
+            margin: auto;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            grid-gap: 50px;
+
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: #252423;
+            color: white;
+            font-family: 'Roboto';
+        }
+
+        #background {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact {
+            margin-right: 10%;
+        }
+
+        .footerUn {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%
+        }
+
+        .logoFooter {
+            margin: 10px;
+        }
+
+        .footerDeux {
+            text-align: center;
+        }
+
+        .colonne {
+            margin: 20px;
+        }
+
+        #regle {
+            flex-direction: initial;
+            font-size: 5mm;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgb(8, 119, 119), purple);
+        }
+
+        #fond {
+            height: 50%;
+            width: 50%;
+            z-index: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <a href="../../index.html" class="tailleLogo"><img src="logo.svg" class="logo"></a>
+        <nav>
+            <a class="accueil" href="../../index.html">Accueil</a>
+            <a class="credits" href="../credits/créditss.html">Qui sommes nous ?</a>
+
+        </nav>
+
+    </header>
+
+    <h2>Jeu des Mers</h2>
+    <h2><button onclick="location.reload()">Nouvelle Partie</button></h2>
+    <div id="regle" style="text-align: center">
+        Règles des Mers: il sagit en réalité du jeu des paires ou memory, 20 images sont faces cachées,<br> le but est de retrouver les paires de chaque images sois 10 paires<br>.Pour gagner il vous faudra les trouver en moins de coup possible.
+    </div>
+
+    <div id="carte">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+        <img src="imag0.png">
+    </div>
+
+    <script>
+        //http://sciences-du-numerique.fr/projets-javascript/code-source-du-jeu-de-memory/60
+        //https://www.youtube.com/watch?v=5XinivwvQbg&t=2133s
+
+        var animalCarte = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10]; // liste des numéros de chaque image
+
+        var etatsCartes = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; //toute retournés de dos au départ
+
+        var cartesRetournees = []; //liste qui contiendra les cartes retournées dans un lapse de temps si se sont pas les bonnes ou definitivement si la paire est trouvé
+
+        var nbPairesTrouvees = 0; // variable qui contiendra les paires trouvées
+
+        var imgCartes = document.getElementById("carte").getElementsByTagName("img"); //chemin appelant les cartes dans le JS 
+
+        var resultat = 0; // resultat du comptage des coups 
+
+
+
+        //parcours de la liste d'image grace au click
+        for (var i = 0; i < imgCartes.length; i++) {
+            imgCartes[i].Carte = i;
+            imgCartes[i].onclick = function() { //la fonction comparateur est appelé dès un click sur image
+                comparateur(this.Carte); // j'ai du mal à comprendre l'utilisation du "this" mais je ne vois pas comment faire sans même apres avoir chercher l'explication sur internet dur a comprendre
+            }
+        }
+
+        //il sagit ici du statut des images 
+        function majAffichage(Carte) {
+            switch (etatsCartes[Carte]) {
+                case 0:
+                    imgCartes[Carte].src = "imag0.png";
+                    break;
+                case 1:
+                    imgCartes[Carte].src = "imag" + animalCarte[Carte] + ".png";
+                    break;
+                case -1:
+                    imgCartes[Carte].style.visibility = "hidden";
+                    break;
+            }
+        }
+
+        generateurAlea();
+
+        //dans cette fonction le i sera la position de la carte
+        function generateurAlea() {
+            for (var i = animalCarte.length - 1; i >= 1; i--) { // donne la position de la carte dans la liste d'images d'animaux
+                var hasard = Math.floor(Math.random() * (i + 1)); //fonction random
+                var save = animalCarte[i];
+                animalCarte[i] = animalCarte[hasard];
+                animalCarte[hasard] = save;
+            }
+        }
+
+        // fonction d'analyse des cartes, chaque click sur une carte appel cette fonction
+        function comparateur(Carte) {
+
+            if (cartesRetournees.length < 2) { //limitation de retournement de carte à 2 dans la liste
+
+                if (etatsCartes[Carte] == 0) {
+                    etatsCartes[Carte] = 1;
+                    cartesRetournees.push(Carte);
+                    majAffichage(Carte);
+                }
+
+                if (cartesRetournees.length == 2) { //verification apres retournement de la deuxieme carte
+                    resultat++; //permet d'afficher à la fin du jeu d'afficher le nombre de coups effectué
+                    var nouveauEtat = 0;
+                    if (animalCarte[cartesRetournees[0]] == animalCarte[cartesRetournees[1]]) {
+                        nouveauEtat = -1;
+                        nbPairesTrouvees++;
+                    }
+
+                    etatsCartes[cartesRetournees[0]] = nouveauEtat;
+                    etatsCartes[cartesRetournees[1]] = nouveauEtat;
+
+                    setTimeout(function() { //fonction de la limite de temps 
+                        majAffichage(cartesRetournees[0]);
+                        majAffichage(cartesRetournees[1]);
+                        cartesRetournees = [];
+                        if (nbPairesTrouvees == 10) {
+                            rejouer();
+                        }
+                    }, 750); // temps d'affichage des images face animal   
+                }
+            }
+
+            //quand le jeu est fini on peut rejouer 
+            function rejouer() {
+                alert("Bravo ! tu as gagné en " + resultat + " coups");
+            }
+        }
+    </script>
+</body>
+<footer>
+    <div class="colonne footerUn">
+        <h4>Plan du site</h4>
+        <a href="../../index.html">Accueil</a>
+        <a href="../credits/créditss.html">Crédits</a>
+    </div>
+    <div class="colonne footerDeux">
+        <p>2021</p>
+        <p>© - Rito GAMMESS</p>
+    </div>
+    <div class="colonne contact">
+        <h4>CONTACT</h4>
+        <a href="mailto:yanis.fallard@hetic.net,olivier.roucourt@hetic.net,jeremy.abdoelsomad@hetic.net,eva.verger@hetic.net,stanley.jamais@hetic.net,antoine.azevedo-da-silva@hetic.net"><i class="fas fa-envelope fa-2x logoFooter"></i></a>
+    </div>
+</footer></html>

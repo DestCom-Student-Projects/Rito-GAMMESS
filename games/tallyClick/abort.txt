@@ -1,0 +1,51 @@
+    if(((increment%9 || incrementOne%9 || incrementTwo%9 || incrementThree%9) == 0) && (increment!=0)){
+        glissement++;
+        
+        if((increment%9) == 0){
+            increment = 0;
+            incrementThree++;
+        }
+        if((incrementThree%9) == 0){
+            increment == 0;
+            incrementTwo++;
+        }
+        if((incrementTwo%9) == 0){
+            increment == 0;
+            incrementOne++;
+        }
+        if((incrementOne%9) == 0){
+            increment == 0;
+            
+        }
+    }
+    
+    //switch(glissement){
+      //  case 0:
+        //    increment++;
+          //  break;
+        //case 1:
+         //   incrementThree++;
+           // increment++;
+        //    break;
+    //    case 2:
+    //        incrementTwo++;
+      //      incrementThree++;
+        //    increment++;
+        //    break;
+    //    case 3:
+    //        incrementOne++;
+    //        incrementTwo++;
+      //      incrementThree++;
+      //      increment++;
+        //    break;
+    //    case 4:
+      ////      glissement = 0;
+          //  incrementThree = 0;
+            //incrementTwo = 0;
+            //incrementOne = 0;
+        //    increment = 0;
+         //   break;
+//        default:
+  //          console.log("erreur");
+    //}
+    

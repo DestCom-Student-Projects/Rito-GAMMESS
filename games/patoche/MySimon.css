@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap%27');
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    box-sizing: border-box;
+    line-height: 80px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    border: solid #252423;
+}
+
+nav {
+    margin-left: 5%;
+}
+
+a{
+    color: white;
+    opacity: 1;
+    transition-property: opacity;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+.accueil,
+.credit {
+    text-decoration: none;
+    margin: 25px;
+    font-size: 1em;
+    font-family: Roboto;
+    color: white;
+}
+
+
+.night {
+    margin-left: 60%;
+}
+
+.logo {
+    margin: 20px;
+    filter: invert(100%);
+}
+
+.tailleLogo{
+    width: 10%;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+h2, h3 {
+    font-weight: bold;
+}
+
+h2 {
+
+    font-size: 2rem;
+    color: white;
+    padding: 2px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: white;
+    padding: 2px;
+    margin: 10px
+}
+
+article {
+        font-family: Roboto;
+        width: 100px;
+        padding: 0.5em;
+        line-height: 25px;
+        border: solid #dfdddc;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: white;
+}
+
+main > article {
+        padding: 30px;
+        position: relative;
+        top: 125px;
+        left: 74%;
+        width: 50%;
+        color: white;
+}
+
+.bouton_couleur{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    cursor: pointer;
+    border: 5px solid #dfdddc
+}
+.bouton_couleur:hover{
+    opacity: 3;
+    box-shadow: inset 0px 0px 0px 5px white;
+    box-sizing: border-box;
+}
+.bouton_couleur:active {
+	transform: scale(0.9);
+	opacity: 0.1;
+}
+.bouton_couleur.active {
+	transform: scale(0.9);
+	opacity: 0.1;
+}
+
+#Vert{
+    background-color:rgb(8, 102, 8);
+    border-radius:100% 0 0 0;
+}
+#Vert.bouton_actif{
+    background-color:rgb(6, 182, 6);
+}
+#Rouge{
+    background-color: darkred;
+	border-radius:0 100% 0 0;
+}
+#Rouge.bouton_actif{
+    background-color:red;
+}
+#Jaune{
+    background-color:goldenrod;
+	border-radius:0 0 100% 0;
+}
+#Jaune.bouton_actif{
+    background-color:yellow;
+}
+#Bleu{
+    background-color:darkblue;
+	border-radius:0 0 0 100%;
+}
+#Bleu.bouton_actif{
+    background-color:blue;
+}
+
+.Bouton_score {
+    font-size: 1.2em;
+    font-family: Roboto;
+    position: absolute;
+	width: 25%;
+	height: 30px;
+	float: left;
+    background: white;
+    border: solid #c7bcb7;
+    border-radius: 15px;
+	color: black;
+	font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    left: 36%;
+}
+
+.bouton_central{
+    position: relative;
+    display: inline-block;
+    background-color:white;
+    border: 10px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    top: -400px;
+    
+}
+button{
+    display: inline-block;
+    line-height: 3;
+    padding: 0px 20px;
+    color: -internal-light-dark(black, white);
+    background-color:rgb(220, 15, 15);
+    box-sizing: border-box;
+    padding: 0px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-radius: 25%;
+    border-color: rgb(119, 0, 0);
+    border-image: initial;
+}
+
+#start {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+}
+
+#reset {
+    position: absolute;
+    top: 75px;
+    left: 125px;
+}
+
+button:hover {
+    background-color: rgb(240, 4, 4);
+}
+
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+button:disabled {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+	background: rgb(189, 195, 199);
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: #252423;
+    color: white;
+    left: 0;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.contact{
+    margin-right: 10%;
+    font-size: 1em;
+    font-family: Roboto;
+    color: white;
+}
+
+.footerUn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    color: white;
+    font-family: Roboto;
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.logoFooter{
+    margin: 10px;
+    color: white;
+}
+
+.footerDeux{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1em;
+    color: white;
+    line-height: 30px;
+}
+
+.colonne{
+    margin: 20px;
+}
