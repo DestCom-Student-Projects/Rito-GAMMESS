@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <h1>Le fils du Boulier</h1>
+    <!-- inspiré dans l'utilisation du form pour mes attentes par un thread de StackOverflow  -->
+    <div id="size">
+        <form id="corps" name="calc">
+            <!--Creation de la barre qui affiche les resultat-->
+            <input id="bar" type="text" name="affi">
+
+            <!--Boutons nombres-->
+            <input type="button" value="9" onclick="prendre_val('9')">
+            <input type="button" value="8" onclick="prendre_val('8')">
+            <input type="button" value="7" onclick="prendre_val('7')">
+            <input type="button" value="6" onclick="prendre_val('6')">
+            <input type="button" value="5" onclick="prendre_val('5')">
+            <input type="button" value="4" onclick="prendre_val('4')">
+            <input type="button" value="3" onclick="prendre_val('3')">
+            <input type="button" value="2" onclick="prendre_val('2')">
+            <input type="button" value="1" onclick="prendre_val('1')">
+            <input type="button" value="0" onclick="prendre_val('0')">
+            <!-- Boutons opérations + divers-->
+            <input type="button" value="Eff" id="effacer" onclick="delete_aff()">
+            <input type="button" value="X" id="operation" onclick="prendre_val('*')">
+            <input type="button" value="/" id="operation" onclick="prendre_val('/')">
+            <input type="button" value="+" id="operation" onclick="prendre_val('+')">
+            <input type="button" value="-" id="operation" onclick="prendre_val('-')">
+            <input type="button" value="." id="virgule" onclick="prendre_val('.')">
+
+            
+            <input type="button" value="=" id="total" onclick="rez()">
+        </form>
+    </div>
+</body>
+</html>
