@@ -1,3 +1,5 @@
+//Jeu par ADS Antoine
+
 // Initialisations des variables.
 // Sélection des balises du DOM.
 var puissanceQuatre = document.querySelector("#puissance4");

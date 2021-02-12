@@ -1,24 +1,24 @@
-main{
+main {
     text-align: center;
 }
 
-form{
+form {
     margin: 10%;
     padding: 2%;
 }
 
-input{
+input {
     margin: 1%;
 }
 
-.barre{
+.barre {
     text-decoration: line-through;
 }
 
-.gros{
+.gros {
     font-weight: bold;
 }
 
-.italic{
+.italic {
     font-style: italic;
 }

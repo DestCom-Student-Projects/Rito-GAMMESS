@@ -1,4 +1,6 @@
- var J1 = Math.floor(Math.random() * 101); //On déclare et on initialise une variable aléatoire qui va de 0 à 100
+//Jeu par Verger Eva
+
+var J1 = Math.floor(Math.random() * 101); //On déclare et on initialise une variable aléatoire qui va de 0 à 100
 var compteurJ2 = 0;
 var afficher = document.querySelector("#affiche");
 
