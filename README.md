@@ -29,7 +29,7 @@ Un pixel drawer (Réalisé par Azevedo D.S Antoine)
 ### Jacques Le Sombre Valet
 Le jeu du blackjack (Réalisé par Jamais Stanley)
 ### Le code ~~césar~~ ***BRUTUS***
-Un codeur en césar (Réaliser par Fallard Yanis)
+Un chiffrement en césar (Réalisé par Fallard Yanis)
 ### Le jeu des mers
 Un mémory game (ou jeu des paires) (Réalisé par Abdoelsomad Jérémy)
 ### Akinumérator
