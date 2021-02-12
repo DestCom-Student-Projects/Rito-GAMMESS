@@ -1,3 +1,5 @@
+//Jeu par Verger Eva
+
 var pierre = 0;
 var feuille = 1;
 var ciseau = 2;

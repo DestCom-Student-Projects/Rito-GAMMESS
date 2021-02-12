@@ -1,3 +1,5 @@
+//Jeu par ADS Antoine
+
 //Initialisation des variable
 var couleur = document.querySelector("#choixCouleur");
 var bloc = document.querySelectorAll(".carre");
