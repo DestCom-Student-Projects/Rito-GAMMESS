@@ -50,7 +50,6 @@ function proposition(max, min) {
 function manche2() {
     document.querySelector(".manche2").classList.remove("hidden");
     document.querySelector(".manche1").classList.add("hidden");
-    document.querySelector(".ligne").classList.add("hidden");
     var borneSup = 100;
     var borneInf = 0;
 
@@ -70,7 +69,6 @@ function manche2() {
         afficher.innerHTML = "C'est gagné, <br> Manche 2 : " + compteurordi + " essais";
         document.querySelector(".manche1").classList.remove("hidden");
         document.querySelector(".manche2").classList.add("hidden");
-        document.querySelector(".ligne").classList.remove("hidden");
         if (compteurJ2 > compteurordi) {
             afficher.innerHTML = "Akinumerator a gagné";
         }
