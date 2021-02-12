@@ -9,7 +9,7 @@ var ui = new Audio('wii.mp3');
 var waves = new Audio('synthwave.mp3');
 var son = document.querySelector(".sounds");
 
-function synth(){
+function synth() {
     waves.play();
 }
 
@@ -20,28 +20,27 @@ function wii() {
 }
 
 
-document.addEventListener('keydown', function(event){
+document.addEventListener('keydown', function (event) {
     if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
-		current = 0;
-		return;
-	}
+        current = 0;
+        return;
+    }
 
-	current++;
+    current++;
 
-	if (pattern.length === current) {
-		current = 0;
-		wii();
-	}
+    if (pattern.length === current) {
+        current = 0;
+        wii();
+    }
 }, false);
 
 son.addEventListener("click", function (event) {
-    if(son.classList.contains('fa-volume-mute')){
+    if (son.classList.contains('fa-volume-mute')) {
         son.classList.remove('fa-volume-mute');
         son.classList.add('fa-volume-up');
         ui.pause();
         synth();
-    }
-    else if(son.classList.contains('fa-volume-up')){
+    } else if (son.classList.contains('fa-volume-up')) {
         son.classList.remove('fa-volume-up');
         son.classList.add('fa-volume-mute');
         waves.pause();
