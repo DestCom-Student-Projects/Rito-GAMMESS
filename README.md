@@ -38,7 +38,8 @@ Un jeu du juste prix (Réalisé par Verger Eva)
 Un snake comme sur 3310 (Réalisé par Fallard Yanis)
 ### Tally Click Counter
 Un simple compteur (Réalisé par Azevedo D.S Antoine)
-
+### Le Fils Du Boulier
+Une calculatrice (Réalisé par Jamais Stanley)
 ## Comment jouer ?
 Rendez-vous simplement sur http://ritogammess.eu/ et vous pourrez acceder au projet.
 
