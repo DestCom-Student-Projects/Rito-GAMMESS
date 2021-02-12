@@ -1,3 +1,5 @@
+//Jeu par ADS Antoine
+
 //Initialisation des variables
 var plusOne = document.querySelector(".click");
 var RAZ = document.querySelector(".RAZ");
@@ -23,28 +25,28 @@ plusOne.addEventListener("click", function (event) {
 
     if (((increment % 10) == 0) && increment != 0) { //Si l'on passe une  dizaine 
         increment = 0; //Remet les unités a 0
-        incrementThree++;//Auguemente les dizaine de 1
+        incrementThree++; //Auguemente les dizaine de 1
     }
     if ((incrementThree % 10 == 0) && incrementThree != 0) {
-        increment = 0;//Remet les unités a 0
-        incrementThree = 0;//Remet les dizaines a 0
-        incrementTwo++;//Auguemente les centaines de 1
+        increment = 0; //Remet les unités a 0
+        incrementThree = 0; //Remet les dizaines a 0
+        incrementTwo++; //Auguemente les centaines de 1
     }
     if ((incrementTwo % 10 == 0) && incrementTwo != 0) {
-        increment = 0;//Remet les unités a 0
-        incrementThree = 0;//Remet les dizaines a 0
-        incrementTwo = 0;//Remet les centaines a 0
-        incrementOne++;//Auguemente les milliers de 1
+        increment = 0; //Remet les unités a 0
+        incrementThree = 0; //Remet les dizaines a 0
+        incrementTwo = 0; //Remet les centaines a 0
+        incrementOne++; //Auguemente les milliers de 1
     }
 
     if ((incrementOne % 10 == 0) && incrementOne != 0) { //Si l'on dépasse 9999
-        drogba();//Jouer le "OUI" de didier drogba
-        increment = 0;//Remet les unités a 0
-        incrementThree = 0;//Remet les dizaines a 0
-        incrementTwo = 0;//Remet les centaines a 0
-        incrementOne = 0;//Remet les milliers a 0
+        drogba(); //Jouer le "OUI" de didier drogba
+        increment = 0; //Remet les unités a 0
+        incrementThree = 0; //Remet les dizaines a 0
+        incrementTwo = 0; //Remet les centaines a 0
+        incrementOne = 0; //Remet les milliers a 0
     }
-    
+
     //Mets a jour l'affichage
     numberOne.innerHTML = incrementOne;
     numberTwo.innerHTML = incrementTwo;
@@ -54,11 +56,11 @@ plusOne.addEventListener("click", function (event) {
 
 //Si l'utilisateur remet a zéro son compteur
 RAZ.addEventListener("click", function (event) {
-    increment = 0;//Remet les unités a 0
-    incrementOne = 0;//Remet les milliers a 0
-    incrementTwo = 0;//Remet les centaines a 0
-    incrementThree = 0;//Remet les dizaines a 0
-    
+    increment = 0; //Remet les unités a 0
+    incrementOne = 0; //Remet les milliers a 0
+    incrementTwo = 0; //Remet les centaines a 0
+    incrementThree = 0; //Remet les dizaines a 0
+
     //Mets a jour l'affichage
     numberOne.innerHTML = 0;
     numberTwo.innerHTML = 0;

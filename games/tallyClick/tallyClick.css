@@ -1,5 +1,4 @@
-
-h1{
+h1 {
     text-align: center;
 }
 
@@ -25,7 +24,7 @@ h1{
     margin-left: 35%;
 }
 
-.click{
+.click {
     position: absolute;
     left: 200px;
     top: 50px;
@@ -42,7 +41,7 @@ h1{
     color: white;
 }
 
-.RAZ{
+.RAZ {
     position: absolute;
     top: 200px;
     left: 500px;
