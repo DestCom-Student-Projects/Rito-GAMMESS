@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: linear-gradient(300deg, #1C542C, #31a775), #268b19;
+    font-family: 'Roboto', sans-serif;
+}
+
+#front{
+    display: grid;
+    height: 98vmin;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 3fr 15% 5% 3fr 15%; 
+}
+
+#title{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    text-align: center;
+    color: #BABD28;
+    text-shadow: 0px 4px 4px black;
+    grid-column:2/5;
+    grid-row-start:1;
+
+    
+
+}
+#gap{
+    display: none;
+    grid-column-start:3;
+    grid-row-start:2;
+    grid-row-end:5;
+}
+
+#play{
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #BABD28;
+    text-shadow: 0px 4px 4px black;
+    border: 2px solid #BABD28;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    grid-column-start:3;
+    grid-row-start:5;
+}
+
+
+.hide{
+    display:none;
+}
+
+#box1{
+    border: 2px solid #BABD28;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 150px;
+    transform: rotate(45deg);
+    grid-column-start:5;
+    grid-row:2/3;
+}
+
+#box2{
+    border: 2px solid #BABD28;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 150px;
+    transform: rotate(-45deg);
+    grid-column-start:1;
+    grid-row:2/3;
+}
+
+#box3{
+    border: 2px solid #BABD28;
+    border-radius: 10px;
+    grid-column-start:3;
+    grid-row-start:4;
+}
+
+#left,#main_j,#main_c,#text_button1,#text_button2{
+    font-size: 24px;
+    text-align: center;
+    color: #BABD28;
+    text-shadow: 0px 4px 4px black;
+}
+
+#left{
+    grid-column-start:4;
+    grid-row-start:1;
+}
+
+#main_j{
+    grid-column-start:3;
+    grid-row-start:5;
+}
+
+#main_c{
+    grid-column-start:2;
+    grid-row-start:1;
+}
+#box_c{
+    border: 2px solid #BABD28;
+    box-sizing: border-box;
+    border-radius: 10px;
+    grid-column-start:3;
+    grid-row-start:1;
+
+}
+
+#text_button1{
+    grid-column-start:2;
+    grid-row-start:5;
+    background-color: #236dc2;
+    border: 2px solid #BABD28;
+    border-radius: 350px;
+    text-align: center;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+#text_button2{
+    grid-column-start:4;
+    grid-row-start:5;
+    background-color: #2255b4;
+    border: 2px solid #BABD28;
+    border-radius: 350px;
+    border-radius: 350px;
+    text-align: center;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+
+#main_c{
+    margin-right:-50px;
+}
+
+
+#trait{
+    position: absolute;
+    width: 60%;
+    height: 110%;
+    left: 40vmin;
+    right:40vmin;
+    top:-70vmin;
+    z-index:-1;
+    border: 4px solid #BABD28;
+    border-radius: 350px;
+    transform: rotate(90deg);
+}
+
+#end_game
+{
+    grid-column-start:3;
+    grid-row:2/3;
+}
+
+#end_game>#win,#over_c,#bj_j
+{
+    z-index: 1;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    color: black;
+    background-color: green;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+}
+
+#end_game>#loose,#over_j,#bj_c
+{
+    z-index: 1;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+    color: black;
+    background-color: red;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#draw
+{
+    z-index: 1;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+    color: black;
+    background-color: #fbff00;
+    border: 2px solid #BABD28;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#carte_c
+{
+    display: inline;
+    margin-top:20px;
+    margin-left:5px;
+    z-index: 1;
+    grid-row-start:1;
+    grid-column-start:3;
+
+}
+
+#carte_j
+{
+    z-index: 1;
+    margin-top:20px;
+    margin-left:5px;
+    grid-row-start:4;
+    grid-column-start:3;
+}
+
+#rematch
+{
+    text-align: center;
+    background-color: #BABD28;
+    border: 2px solid #585822;
+    border-radius: 10px;
+    z-index: 1;
+    font-size:20px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+img
+{
+    height: 128px;
+    width: 96px;
+
+}
+
+#retourn{
+    z-index: 2;
+}
+
+/*reste à faire :
+-carte retourné
+- explic
+- music
+- annim
+*/

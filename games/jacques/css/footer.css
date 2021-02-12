@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #252423;
+    color: white;
+}
+
+
+.contact{
+    margin-right: 10%;
+}
+
+.footerUn{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%
+}
+
+.logoFooter{
+    margin: 10px;
+}
+
+.footerDeux{
+    text-align: center;
+}
+
+.colonne{
+    margin: 20px;
+}

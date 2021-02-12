@@ -1,0 +1,17 @@
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    box-sizing: border-box;
+    line-height: 80px;
+    font-weight: 500;
+
+}
+
+nav {
+    margin-left: 5%;
+}

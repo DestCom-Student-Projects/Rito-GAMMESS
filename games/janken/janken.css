@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    box-sizing: border-box;
+    line-height: 80px;
+    font-weight: 500;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E7E6E3;
+    margin: auto;
+
+}
+
+
+
+h2 {
+    text-align-last: center;
+}
+
+a {
+    text-decoration: none;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+    color: white;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+a:visited {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #252423;
+    color: white;
+    margin-top: 300px;
+}
+
+ul {
+    margin-left: 41%;
+    padding: 15px;
+}
+
+form {
+    text-align: center;
+}
+
+.credit {
+    margin-left: 25px;
+}
+
+
+.bouton2,
+.bouton1,
+.bouton3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.taille {
+    width: 75px;
+}
+
+
+
+.contact {
+    margin-right: 10%;
+}
+
+.footerUn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%
+}
+
+.logoFooter {
+    margin: 10px;
+}
+
+.footerDeux {
+    text-align: center;
+}
+
+.colonne {
+    margin: 20px;
+}
+
+
+
+.night {
+    margin-left: 60%;
+}
+
+.logo {
+    filter: invert(100%);
+    margin: 20px;
+}
+
+.tailleLogo {
+    width: 10%;
+}
+
+#intro {
+    text-align: center;
+
+}
+
+nav {
+    margin-left: 5%;
+}
+
+.bouton1:hover,
+.bouton2:hover,
+.bouton3:hover {
+    opacity: 0.5;
+}
+
+#diams,
+#paper,
+#knife {
+    margin-right: 70%;
+    text-align: center;
+
+}
+
+.taille .bouton1,
+.bouton2,
+.bouton3 {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.taille:hover,
+.bouton1:hover,
+.bouton2:hover,
+.bouton3:hover {
+    /*zoom symbôles*/
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.hidden {
+    display: none;
+}
+
+.pierre,
+.paper,
+.knife {
+    block-size: 95px;
+}
+
+#explications {
+    text-align: center;
+}
+
+#debut {
+    text-align: center;
+}
+
+.jeu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.j1,
+.j2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#affiche {
+    text-align: center;
+}
+
+.j2 {
+    margin-right: 140px;
+}
+
+#choixB {
+    text-align: center;
+}
+
+#choix {
+    text-align: center;
+}
+
+.titre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.sound {
+    block-size: 40px;
+    margin-top: 20px;
+}

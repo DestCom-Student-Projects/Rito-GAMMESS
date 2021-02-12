@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rito Gammess</title>
+    <meta name="author" content="RITO GAMMESS">
+    <meta name="description" content="Découvrez le site de Rito Gammess">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../assets/Images/favicon-96x96.png" />
+    <script src="https://kit.fontawesome.com/3de5047d52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="janken.css">
+    <meta property="og:title" content="Rito GAMMESS">
+    <meta property="og:site_name" content="Rito GAMMESS">
+    <meta property="og:url" content="http://ritogammess.eu/">
+    <meta property="og:description" content="Accédez au site officiel de RITO GAMMESS,
+Le site ultime de divertissement au style futuriste des années 80.
+Venez découvrir l'équipe et nos jeux,
+et vous aussi entrez un monde de jeu sans limites !">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="/assets/Images/ritoog.png">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" class="tailleLogo"><img src="image/logo.svg" class="logo"></a>
+        <nav>
+            <a class="accueil" href="../../index.html">Accueil</a>
+            <a class="credit" href="../credits/créditss.html">Qui sommes nous ?</a>
+        </nav>
+    </header>
+
+    <article>
+        <p><img class="titre" src="image/titre.png"></p>
+        <p id="intro"><strong>Marre du mémorable jeu classique du pierre, papier, ciseaux ?<br>
+                Découvre Janken, un dérivé de ce jeu avec des symboles peu communs !<br>
+                <img class="sound" src="image/sound.png"> <br>SOUND ON </strong>
+        </p>
+        <h2>RULES</h2>
+        <p id="explications">Les joueurs dévoilent simultanément leur "arme" symbolisée ci-dessous (diamant, papier toilette, couteau).<br>
+            Le vainqueur est celui qui possède la meilleure combinaison.<br>
+            Rappel des combinaisons :
+        </p>
+        <ul>
+            <li><span id="diams">Le diamant brise le couteau</span></li>
+            <li><span id="paper">Le papier toilette recouvre le diamant</span></li>
+            <li><span id="knife">Le couteau coupe le papier toilette</span></li>
+        </ul>
+        <p id="debut"> C'est toi qui lance la partie.<br>
+            Pour cela, clique sur l'un des trois symboles pour réaliser une combinaison.<br>
+            Bonne partie !
+        </p>
+
+
+
+    </article>
+    <div class="jeu">
+        <div class="j1">
+            <p id="choix">Votre choix</p>
+            <!--choix du joueur-->
+            <div>
+                <img class="bouton1 taille" src="image/diams.svg">
+                <img class="bouton2 taille" src="image/pq.svg">
+                <img class="bouton3 taille" src="image/knife.svg">
+
+
+            </div>
+        </div>
+
+        <p id="affiche"> </p>
+
+        <div class="j2">
+            <p id="choixB">Choix du BOT</p>
+            <!--choix du BOT-->
+            <div>
+                <img class="pierre hidden" src="image/diams.svg">
+                <img class="paper hidden" src="image/pq.svg">
+                <img class="knife hidden" src="image/knife.svg">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="colonne footerUn">
+            <h4>Plan du site</h4>
+            <a href="../../index.html">Accueil</a>
+            <a href="../credits/créditss.html">Crédits</a>
+        </div>
+        <div class="colonne footerDeux">
+            <p>2021</p>
+            <p>© - Rito GAMMESS</p>
+        </div>
+        <div class="colonne contact">
+            <h4>CONTACT</h4>
+            <a href="mailto:yanis.fallard@hetic.net,olivier.roucourt@hetic.net,jeremy.abdoelsomad@hetic.net,eva.verger@hetic.net,stanley.jamais@hetic.net,antoine.azevedo-da-silva@hetic.net"><i class="fas fa-envelope fa-2x logoFooter"></i></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="janken.js">
+
+    </script>
+</body>
