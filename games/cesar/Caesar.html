@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rito Gammess</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/CSS/base.css">
+    <link rel="stylesheet" href="../../assets/CSS/footer.css">
+    <link rel="stylesheet" href="../../assets/CSS/header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="assets/Images/favicon-96x96.png" />
+    <script src="https://kit.fontawesome.com/3de5047d52.js" crossorigin="anonymous"></script>
+    <meta property="og:title" content="Rito GAMMESS">
+    <meta property="og:site_name" content="Rito GAMMESS">
+    <meta property="og:url" content="http://ritogammess.eu/">
+    <meta property="og:description" content="Accédez au site officiel de RITO GAMMESS,
+Le site ultime de divertissement au style futuriste des années 80.
+Venez découvrir l'équipe et nos jeux,
+et vous aussi entrez un monde de jeu sans limites !">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="/assets/Images/ritoog.png">
+</head>
+
+<script>
+    function Convertir() {
+
+        String.prototype.sansAccent = function() { // code repris sur http://www.finalclap.com/faq/257-javascript-supprimer-remplacer-accent
+            var accent = [
+                /[\300-\306]/g, /[\340-\346]/g, // A, a
+                /[\310-\313]/g, /[\350-\353]/g, // E, e
+                /[\314-\317]/g, /[\354-\357]/g, // I, i
+                /[\322-\330]/g, /[\362-\370]/g, // O, o
+                /[\331-\334]/g, /[\371-\374]/g, // U, u
+                /[\321]/g, /[\361]/g, // N, n
+                /[\307]/g, /[\347]/g, // C, c
+            ];
+            var noaccent = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u', 'N', 'n', 'C', 'c'];
+
+            var str = this;
+            for (var i = 0; i < accent.length; i++) {
+                str = str.replace(accent[i], noaccent[i]);
+            }
+
+            return str;
+        }
+
+        var texte = document.querySelector('#texte').value; // recupère les infos.
+        var texte = texte.sansAccent();
+        var texte = texte.toLowerCase();
+        var decal = document.querySelector('#decal').value; // recupère le nombre a decaler.
+        var decal = parseInt(decal);
+        var texteSplit = texte.split("");
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split(''); // tableau de l'alphabet
+        var space = [' '];
+        var encrypt = "";
+        var caesar = "";
+
+
+
+
+        for (i of texteSplit) {
+
+            console.log(texte, decal)
+            console.log(texteSplit)
+            console.log(i)
+            console.log(alphabet.indexOf(i))
+            console.log(alphabet.indexOf(i) + decal)
+            console.log(space.indexOf(i))
+
+            if (space[(space.indexOf(i))]) { // s'il y a un espace dans la phrase.
+                encrypt += ' '
+
+            } else if (decal > 0) {
+                caesar = alphabet[(alphabet.indexOf(i) + decal) % 26] // cherche la lettre puis la décale
+                encrypt = encrypt + caesar
+
+            } else {
+
+                document.querySelector('#output').value = 'Veuillez Choisir un décalage' // CSS A FAIRE CASE ROUGE ERREUR
+            }
+
+
+        }
+        encrypt = encrypt.toUpperCase() // sortie en majuscule
+        document.querySelector('#output').value = encrypt // output de la valeur dans la case input
+    }
+</script>
+
+<body>
+    <header>
+        <a href="index.html" class="tailleLogo"><img src="../../assets/Images/logo.svg" class="logo" alt=""></a>
+        <nav>
+            <a class="accueil" href="../../index.html">Accueil</a>
+            <a class="credit" href="../credits/créditss.html">Qui sommes nous ?</a>
+        </nav>
+        <!--- <a class="night"><i class="fas fa-moon buttonNight"></i></a> --->
+    </header>
+    <main>
+        <h3 id="cesar">Le code <span class="barre">césar</span> <span class="gros italic">BRUTUS</span></h3>
+        <p>Chiffrez des textes sans limites</p>
+        <form>
+            <label id="labelText" for="texte">Entrer le texte a chiffrer</label>
+            <input type="text" name="texte" id="texte" />
+            <br>
+            <label for="nombre">Nombre de décalage souhaité</label>
+            <input type="number" name="nombre" id="decal" />
+            <br>
+            <input id="inputNumber" type="button" value="Chiffrer !" onclick="console.log(Convertir())" />
+            <br>
+            <label>Resultat :</label><input type="text" id="output" size="30" value="">
+
+        </form>
+    </main>
+    <footer>
+        <div class="colonne footerUn">
+            <h4>Plan du site</h4>
+            <a href="../../index.html">Accueil</a>
+            <a href="../credits/créditss.html">Crédits</a>
+        </div>
+        <div class="colonne footerDeux">
+            <p>2021</p>
+            <p>© - Rito GAMMESS</p>
+        </div>
+        <div class="colonne contact">
+            <h4>CONTACT</h4>
+            <a href="mailto:yanis.fallard@hetic.net,olivier.roucourt@hetic.net,jeremy.abdoelsomad@hetic.net,eva.verger@hetic.net,stanley.jamais@hetic.net,antoine.azevedo-da-silva@hetic.net"><i class="fas fa-envelope fa-2x logoFooter"></i></a>
+        </div>
+    </footer>
+</body></html>
