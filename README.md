@@ -48,6 +48,6 @@ Rendez-vous simplement sur http://ritogammess.eu/ et vous pourrez acceder au pro
 | Azevedo Da Silva Antoine 	|   [HERE](antoine.azevedo-da-silva@hetic.net)   	|      [HERE](https://www.linkedin.com/in/antoine-ads/) |  [HERE](https://github.com/DestroyCom) 	|        [HERE](https://destroykeaum.alwaysdata.net/)   	|
 | Verger Eva               	|    [HERE](eva.verger@hetic.net)  	|     [HERE](https://www.linkedin.com/in/eva-verger/)     	|  [HERE](https://github.com/eva-vrg)    |     	|
 | Jamais Stanley           	|    [HERE](stanley.jamais@hetic.net)  	|     [HERE](https://www.linkedin.com/in/stanley-jamais-138a991a9/)   |  [HERE](https://github.com/Stan-Jms)	|           	|
-| Roucourt Olivier         	|    [HERE](olivier.roucourt@hetic.net)  	|     [HERE](https://www.linkedin.com/in/olivier-roucourt-48a1421b9/)   |  [HERE]	|           	|
+| Roucourt Olivier         	|    [HERE](olivier.roucourt@hetic.net)  	|     [HERE](https://www.linkedin.com/in/olivier-roucourt-48a1421b9/)   |  [HERE](https://github.com/deyja8)	|           	|
 | Abdoelsomad Jérémy       	|    [HERE](jeremy.abdoelsomad@hetic.net)  	|      [HERE](https://www.linkedin.com/in/jeremy-abdoelsomad-3b4278180/)  |  [HERE](https://github.com/Jounaedi)	|           	|
 | Fallard Yanis            	|   [HERE](yanis.fallard@hetic.net)   	|     [HERE](https://www.linkedin.com/in/yanis-fallard-29553b1ba/)   | [HERE](https://github.com/Yatraxy) 	|           	|
