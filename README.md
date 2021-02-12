@@ -5,7 +5,7 @@ Rito Gammess est née suite à un projet en cours de Front-End à l'école Hetic
 Vous pourrez trouver sur ce Github la totalité des codes des jeux présents sur le site web.
 
 
-## L'équipe
+## L'équipe:
 
 Nous sommes au départ, le *groupe 10* composé de :
 
@@ -16,7 +16,7 @@ Nous sommes au départ, le *groupe 10* composé de :
  - Abdoelsomad Jérémy - https://www.linkedin.com/in/jeremy-abdoelsomad-3b4278180/
  - Fallard Yanis - https://www.linkedin.com/in/yanis-fallard-29553b1ba/
 
-## Les divertissements
+## Les divertissements:
 
 Dans un but comique, nous avons renommé les jeux avec des noms improbables, les voici :
 
@@ -42,7 +42,7 @@ Un simple compteur (Réalisé par Azevedo D.S Antoine)
 ## Comment jouer ?
 Rendez-vous simplement sur http://ritogammess.eu/ et vous pourrez acceder au projet.
 
-## Nous contacter
+## Nous contacter:
 |                          	| Mail 	| LinkedIn  | GitHub | Portfolio 	|
 |--------------------------	|------	|---------- |-----------		|-----------	|
 | Azevedo Da Silva Antoine 	|   [HERE](antoine.azevedo-da-silva@hetic.net)   	|      [HERE](https://www.linkedin.com/in/antoine-ads/) |  [HERE](https://github.com/DestroyCom) 	|        [HERE](https://destroykeaum.alwaysdata.net/)   	|
