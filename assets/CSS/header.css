@@ -1,0 +1,54 @@
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    box-sizing: border-box;
+    line-height: 80px;
+    font-weight: 500;
+
+}
+
+nav {
+    margin-left: 5%;
+}
+
+.accueil,
+.credits {
+    margin: 25px;
+}
+
+
+
+.credits{
+    display: flex;
+    flex-direction: column;
+}
+
+.night {
+    margin-left: 60%;
+}
+
+.logo {
+    margin: 20px;
+    filter: invert(100%);
+}
+
+.tailleLogo{
+    width: 10%;
+}
+
+.sounds{
+    margin-left: 25px;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5;
+    transition-delay: 0.5;
+}
+
+.sounds:hover{
+    opacity: 0.5;
+}
