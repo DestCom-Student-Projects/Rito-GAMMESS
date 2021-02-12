@@ -20,7 +20,8 @@ nav {
 
 }
 
-.credit, .accueil{
+.credit,
+.accueil {
     margin-left: 15px;
     width: 150px;
 }
@@ -223,11 +224,11 @@ nav {
 
 }
 
-.photos a{
+.photos a {
     color: black;
 }
 
-.photos a:hover{
+.photos a:hover {
     color: blue;
     font-style: italic;
 }

@@ -323,3 +323,24 @@
                 }  
             }
             
+            
+            //<i class="fas fa-volume-mute"></i>
+            function bg_music_on()
+            {   
+                verif_sound=document.getElementById("audiosrc");
+                verif_sound.loop=true;
+                verif_sound.volume = 0.2;
+                verif_sound.play();
+                //document.getElementById("volume").classList.add("");
+                //document.getElementById("volume").classList.add('fas fa-volume-mute');
+                document.getElementById("volume").onclick = function() { bg_music_off() };
+            }
+
+            function bg_music_off()
+            {
+                verif_sound=document.getElementById("audiosrc");
+                verif_sound.pause();
+                //document.getElementById("volume").classList.add("");
+                //document.getElementById("volume").classList.add("fas fa-volume-mute");
+                document.getElementById("volume").onclick = function() { bg_music_on() };
+            }

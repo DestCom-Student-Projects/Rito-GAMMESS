@@ -1,3 +1,5 @@
+//Jeu par Fallard Yanis
+
 var canvas = document.querySelector("#snake");
 var ctx = canvas.getContext("2d");
 var box = 32; // 32 pixel par carré ( patterne de la map repris sur une image google)
