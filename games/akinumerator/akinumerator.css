@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E7E6E3;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+#bouton1,
+#bouton3 {
+    background-color: rgb(146, 228, 200);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#bouton2 {
+    background-color: rgb(169, 238, 255);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#bouton3 {
+    background-color: thistle;
+    border-radius: 20px;
+}
+
+#bouton1:hover {
+    background-color: rgb(225, 245, 110);
+}
+
+#bouton2:hover {
+    background-color: rgb(101, 255, 240);
+}
+
+#bouton3:hover {
+    background-color: tomato;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+h3 {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
+.manche1 {
+    margin-top: px;
+}
+
+#J2 {
+    width: 250px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mancheUn,
+.mancheDeux {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+article,
+section {
+    text-align: center;
+}
+
+.mancheDeux {
+    text-decoration: underline;
+}
+
+.titre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+}
+
+.bulle {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    top: 50px;
+    z-index: -2;
+}
+
+.bulle {
+    position: absolute;
+    top: 50px,
+}
+
+.bulle {
+    animation-name: hautbas;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+
+}
+
+@keyframes hautbas {
+
+    0% {
+        position: absolute;
+        top: 1000px
+    }
+
+    25% {
+        position: absolute;
+        top: 1001px
+    }
+
+    50% {
+        position: absolute;
+        top: 1003px
+    }
+
+    75% {
+        position: absolute;
+        top: 1004px
+    }
+
+    90% {
+        position: absolute;
+        top: 1004.5px
+    }
+
+    100% {
+        position: absolute;
+        top: 1005px
+    }
+}
+
+#affiche {
+
+    color: black;
+    position: absolute;
+    z-index: -1;
+    top: 1020px;
+    width: 600px;
+    height: 400px;
+    z-index: -1;
+    font-size: 100%;
+    text-align: center;
+
+}
+
+.wrapper {
+    display: grid;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boite {
+    width: 400px;
+    height: 400px;
+    color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: 490px;
+    padding-top: 13%;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-bottom: -20%;
+}
+
+.infosUn img,
+.infosDeux img {
+    width: 70%
+}
+
+.infosUn,
+.infosDeux {
+    position: relative;
+}
+
+.fonddestextes {
+    width: 15px;
+}
+
+.infosUn p,
+.infosDeux p {
+    position: relative;
+    top: -50%;
+    left: 35%;
+    width: 30%;
+}
+
+.infosUn,
+.infosDeux {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 100%;
+}
+
+.infosUn:hover,
+.infosDeux:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.m1 {
+    margin-top: 300px;
+}
+
+
+.J2 {
+    border-radius: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.aki {
+    position: absolute;
+    top: 1100px;
+    left: 400px;
+    height: 380px;
+    width: 275px;
+    z-index: -2;
+}
+
+.aki {
+    animation-name: levitation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes levitation {
+
+    0% {
+        position: absolute;
+        top: 1100px;
+        left: 400px;
+        height: 380px;
+        width: 275px;
+    }
+
+    5% {
+        position: absolute;
+        top: 1101px;
+        left: 401px;
+    }
+
+    10% {
+        position: absolute;
+        top: 1103px;
+        left: 402px;
+    }
+
+    15% {
+        position: absolute;
+        top: 1104px;
+        left: 403px;
+    }
+
+    25% {
+        position: absolute;
+        top: 1105px;
+        left: 405px;
+    }
+
+    30% {
+        position: absolute;
+        top: 1104px;
+        left: 406px;
+    }
+
+    35% {
+        position: absolute;
+        top: 1103px;
+        left: 407px;
+    }
+
+    45% {
+        position: absolute;
+        top: 1102px;
+        left: 408px;
+    }
+
+
+    50% {
+        position: absolute;
+        top: 1100px;
+        left: 410px;
+
+    }
+
+    57% {
+        position: absolute;
+        top: 1102px;
+        left: 412px;
+    }
+
+    65% {
+        position: absolute;
+        top: 1103px;
+        left: 413px;
+    }
+
+    70% {
+        position: absolute;
+        top: 1104px;
+        left: 414px;
+    }
+
+    75% {
+        position: absolute;
+        top: 1105px;
+        left: 415px;
+
+    }
+
+    80% {
+        position: absolute;
+        top: 1104px;
+        left: 416px;
+    }
+
+    85% {
+        position: absolute;
+        top: 1103px;
+        left: 417px;
+    }
+
+    90% {
+        position: absolute;
+        top: 1102px;
+        left: 418px;
+    }
+
+    95% {
+        position: absolute;
+        top: 1101px;
+        left: 419px;
+    }
+
+    100% {
+        position: absolute;
+        top: 1100px;
+        left: 420px;
+
+    }
+}
+
+
+#intro {
+    font-size: 18px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: #252423;
+    color: white;
+    left: 0;
+    width: 100%;
+    margin-top: 450px;
+
+}
+
+
+.contact {
+    margin-right: 10%;
+}
+
+.footerUn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%
+}
+
+.logoFooter {
+    margin: 10px;
+}
+
+.footerDeux {
+    text-align: center;
+}
+
+.colonne {
+    margin: 20px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    box-sizing: border-box;
+    line-height: 80px;
+    font-weight: 500;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.credit {
+    margin-left: 15px;
+}
+
+.logo {
+    filter: invert(100%);
+    margin: 20px;
+}
+
+.tailleLogo {
+    width: 10%;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E7E6E3;
+}
+
+
+
+h2 {
+    text-align-last: center;
+}
+
+a {
+    text-decoration: none;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+a:visited {
+    color: white;
+}
+
+.night {
+    margin-left: 60%;
+}
+
+.sound {
+    block-size: 40px;
+    margin-top: 20px;
+}
+
+.ligne {
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rito Gammess</title>
+    <meta name="author" content="RITO GAMMESS">
+    <meta name="description" content="Découvrez le site de Rito Gammess">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../assets/Images/favicon-96x96.png" />
+    <link rel="stylesheet" href="akinumerator.css">
+    <script src="https://kit.fontawesome.com/3de5047d52.js" crossorigin="anonymous"></script>
+    <meta property="og:title" content="Rito GAMMESS">
+    <meta property="og:site_name" content="Rito GAMMESS">
+    <meta property="og:url" content="http://ritogammess.eu/">
+    <meta property="og:description" content="Accédez au site officiel de RITO GAMMESS,
+Le site ultime de divertissement au style futuriste des années 80.
+Venez découvrir l'équipe et nos jeux,
+et vous aussi entrez un monde de jeu sans limites !">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="/assets/Images/ritoog.png">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" class="tailleLogo"><img src="image/logo.svg" class="logo"></a>
+        <nav>
+            <a class="accueil" href="../../index.html">Accueil</a>
+            <a class="credit" href="../credits/créditss.html">Qui sommes nous ?</a>
+        </nav>
+    </header>
+    <article>
+        <p>
+            <img class="titre" src="image/titrefinal.png"><br>
+            <span id="intro"><strong>Akinumerator peut lire dans ton esprit et deviner à quel nombre tu penses en répondant à quelques questions.<br>
+                    Pense à un nombre entre 0 et 100 et Akinumerator tentera de le deviner.<br>
+                    Oseras-tu défier le Génie ?</strong><br>
+                <img class="sound" src="image/sound.png"> SOUND ON</span>
+        <h2>RULES</h2>
+        Le but est simple ! Ce jeu se déroule en 2 manches :
+        </p>
+        <div class="box">
+            <div class="infosUn">
+                <img src="image/fond.png">
+                <p><span class="mancheUn">Manche 1 :</span><br>Akinumerator va choisir un nombre aléatoire entre 0 et 100 et tu vas devoir le deviner.<br>
+                    Celui-ci t'indiqueras si le nombre est plus grand ou plus petit.<br>
+                    L'objectif ? Trouver le nombre avec le moins d'essais possibles <br>(ils seront comptabilisés)</p>
+            </div>
+            <div class="infosDeux">
+                <img src="image/fond.png">
+                <p><span class="mancheDeux">Manche 2 :</span> <br> On échange les rôles, pense à un nombre, Akinumerator va te faire des propositions. Tu devras lui dire si le nombre proposé est plus grand ou plus petit.<br>
+                    A la fin des deux manches, celui qui aura trouvé le nombre avec le moins d'essais sera le gagnant !</p>
+            </div>
+        </div>
+        <form>
+            <div class="manche1">
+                <h3> MANCHE 1</h3>
+                <label for="j1"> </label><br>
+                <input type="number" id="J2" name="J2" placeholder="Propose un nombre entre 0 et 100"><br>
+                <input type="button" id="bouton" value="Valider" onclick="manche1()">
+            </div>
+            <div class="manche2 hidden">
+                <h3> MANCHE 2</h3>
+                <p>Pense à un nombre <br> Akinumerator propose : <span class="prop"> </span></p>
+                <form>
+                    <input type="button" id="bouton1" value="C'est plus">
+                    <input type="button" id="bouton2" value="C'est moins">
+                    <input type="button" id="bouton3" value="C'est gagné">
+                </form>
+            </div>
+            <div class="ligne">
+                <img class="aki" src="image/Akinator.png">
+                <img src="image/bulle.png" class="bulle">
+                <p id="affiche"> Propose un nombre <br>entre 0 et 100 </p>
+            </div>
+    </article>
+
+    <section>
+        <p id="gagner"></p>
+    </section>
+    <div class="manches">
+
+    </div>
+    <footer>
+        <div class="colonne footerUn">
+            <h4>Plan du site</h4>
+            <a href="../../index.html">Accueil</a>
+            <a href="../credits/créditss.html">Crédits</a>
+        </div>
+        <div class="colonne footerDeux">
+            <p>2021</p>
+            <p>© - Rito GAMMESS</p>
+        </div>
+        <div class="colonne contact">
+            <h4>CONTACT</h4>
+            <a href="mailto:yanis.fallard@hetic.net,olivier.roucourt@hetic.net,jeremy.abdoelsomad@hetic.net,eva.verger@hetic.net,stanley.jamais@hetic.net,antoine.azevedo-da-silva@hetic.net"><i class="fas fa-envelope fa-2x logoFooter"></i></a>
+        </div>
+    </footer>
+    <script src="akinumerator.js"></script>
+</body></html>
